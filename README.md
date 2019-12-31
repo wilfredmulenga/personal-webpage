@@ -1,4 +1,4 @@
-personal webpage by (Wilfred)[https://github.com/WillzMu]
+personal webpage by [Wilfred](https://github.com/WillzMu)
 
 ## development
 
