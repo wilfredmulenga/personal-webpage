@@ -1,14 +1,14 @@
-import React from 'react';
+import React from 'react'
 import NavFooter from './NavFooter'
 import LandingPage from './LandingPage'
 import Projects from './Projects'
 import Skills from './Skills'
 import Blog from './Blog'
-import './App.scss';
+import './App.scss'
 
-function App() {
+function App () {
   return (
-    <div>
+    <div className="app-container">
       <NavFooter />
       <LandingPage />
       <Projects />
@@ -16,7 +16,7 @@ function App() {
       <Blog />
       <NavFooter />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

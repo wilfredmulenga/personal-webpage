@@ -1,13 +1,12 @@
 import React from 'react'
 
 const NavFooter = () => {
-	return(
-    <div>
-      <p>Hello</p>
-      <p>I am a Fullstack Developer from Lusaka, Zambia.</p>
-      <p>I have an interest for DevOps and UI/UX.</p>
+  return (
+    <div className='landing-page-container'>
+      <p>Hello <br/>I am a Fullstack Developer from Lusaka <br/>
+     that loves creating wonderful and exciting projects.</p>
     </div>
-	)
+  )
 }
 
 export default NavFooter

@@ -12,3 +12,120 @@
   font-family: 'alegreya';
   src: local('alegreya'), url('./fonts/Alegreya-Regular.ttf')
 }
+
+html {
+  font-size: 16px;
+}
+
+// Common
+.card {
+    width: min-content;
+    border: 1px solid;
+    border-color: #707070;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.35);
+
+    &.horizontal {
+      display: flex;
+      width: 100%;
+    }
+
+    &.sub-blog {
+      width: 25rem;
+      margin-top: 2rem;
+    }
+
+    a {
+      position: relative;
+    }
+}
+
+.text-container {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+//App
+.app-container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+// NavFooter
+.navfooter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+// LandingPage
+.landing-page-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7.5rem;
+  text-align: center;
+}
+
+// Projects
+.projects-container {
+
+  .heading {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  margin-bottom: 7.5rem;
+}
+
+.project-item-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+// ProjectItem
+
+.project-item-image {
+  width: 300px;
+  height: 200px;
+}
+
+.skills-container {
+  display: flex;
+  margin-bottom: 7.5rem;
+
+  .LHS {
+    flex: 1;
+  }
+
+  .RHS {
+    flex: 1;
+
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+    }
+
+    .first-row {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Blog
+.blog-container {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 7.5rem;
+
+  .heading {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+
+.sub-blog-container {
+  display: flex;
+  justify-content: space-between;
+}

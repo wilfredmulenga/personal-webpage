@@ -4,7 +4,7 @@ import envelopeImage from './images/envelope-64-FF0BAC.png'
 
 const NavFooter = () => {
   return (
-    <div>
+    <div className='navfooter-container'>
       <p>Wilfred Mulenga</p>
       <div>
         <img src={githubImage} alt="github"/>

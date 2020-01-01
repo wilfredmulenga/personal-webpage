@@ -1,34 +1,41 @@
 import React from 'react'
+import placeholder from './images/placeholder.png'
 
 const MainBlog = () => {
   return (
-    <div>
-      <img src="" alt=""/>
-      <p>Latest post</p>
-      <p>Title</p>
-      <p>short description</p>
+    <div className="card horizontal">
+      <img src={placeholder} alt="placeholder"/>
+      <div className="text-container">
+        <p>Latest post</p>
+        <p>Title</p>
+        <p>short description</p>
+      </div>
     </div>
   )
 }
 
 const SubBlog = () => {
   return (
-    <div>
-      <p>Title</p>
-      <p>short description</p>
+    <div className="card sub-blog">
+      <div className="text-container">
+        <p>Title</p>
+        <p>short description</p>
+      </div>
     </div>
   )
 }
 
 const Blog = () => {
-	return(
-    <div>
-      <p>Blogs</p>
-    <MainBlog />
-    <SubBlog />
-    <SubBlog />
+  return (
+    <div className="blog-container">
+      <p className="heading">Blogs</p>
+      <MainBlog />
+      <div className="sub-blog-container">
+        <SubBlog />
+        <SubBlog />
+      </div>
     </div>
-	)
+  )
 }
 
 export default Blog
