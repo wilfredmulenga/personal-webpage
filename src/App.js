@@ -4,7 +4,7 @@ import LandingPage from './LandingPage'
 import Projects from './Projects'
 import Skills from './Skills'
 import Blog from './Blog'
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
