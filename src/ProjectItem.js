@@ -6,9 +6,9 @@ const ProjectItem = ({ title, description, link }) => {
     <div className="card">
       <img className="project-item-image" src={placeholder} alt="placeholder-image"/>
       <div className="text-container">
-        <p>{title}</p>
-        <p>{description}</p>
-        <a href={link}><p>See more</p></a>
+        <p className="title">{title}</p>
+        <p className="description">{description}</p>
+        <a className="link" href={link}><p>See more</p></a>
       </div>
     </div>
   )
