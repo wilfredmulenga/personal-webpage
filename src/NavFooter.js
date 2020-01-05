@@ -8,9 +8,9 @@ const NavFooter = () => {
     <div className='navfooter-container'>
       <p>Wilfred Mulenga</p>
       <div>
-        <img src={githubImage} alt="github"/>
-        <img src={twitterImage} alt="mail"/>
-        <img src={envelopeImage} alt="mail"/>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/WillzMu"><img src={githubImage} alt="github"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/MulengaWilfred"><img src={twitterImage} alt="mail"/></a>
+        <a target="_blank" rel="noopener noreferrer" href="mailto:willzmu@yahoo.com"><img src={envelopeImage} alt="mail"/></a>
       </div>
     </div>
   )

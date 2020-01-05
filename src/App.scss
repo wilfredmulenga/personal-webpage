@@ -34,9 +34,10 @@ body {
 // Common
 .card {
     width: min-content;
-    border: 1px solid;
-    border-color: #707070;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.35);
+    border: 0.5px solid;
+    border-color: #c8c8c8;
+    border-radius: 2px;
+    box-shadow: rgba(5, 9, 15, 0.25) 0px 4px 4px 0px;
 
     &.horizontal {
       display: flex;
@@ -119,7 +120,6 @@ body {
   padding-bottom: 3rem;
   text-align: center;
   background-color: #171810;
-  margin-bottom: 4rem;
   p {
     font-family: 'muli regular';
     color: #FFFFFF;
@@ -155,7 +155,6 @@ body {
 
 .skills-container {
   display: flex;
-  margin-bottom: 4rem;
   background-color: #171810;
   padding-top: 5rem;
   padding-left: 5rem;
@@ -263,4 +262,20 @@ body {
 .sub-blog-container {
   display: flex;
   justify-content: space-between;
+}
+
+.icons-tribute-container {
+  display: flex;
+  justify-content: center;
+  background-color: #171810;
+  a {
+    text-decoration: none;
+    color: #C8C8C8;
+  }
+}
+
+.underline {
+  height: 0.3rem;
+  background-color: #00BEC5;
+  margin-bottom: 4rem;
 }
