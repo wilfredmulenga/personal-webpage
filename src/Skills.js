@@ -11,7 +11,7 @@ const Skills = () => {
     <div className="skills-container">
       <div className="LHS">
         <p className="skills-heading">Skills</p>
-        <p>Here is a list of languages and frameworks I have experience in</p>
+        <p className="skills-description">Here is a list of languages and frameworks I have experience in</p>
       </div>
       <div className="RHS">
         <div className="row">

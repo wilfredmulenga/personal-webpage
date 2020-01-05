@@ -3,8 +3,11 @@ import React from 'react'
 const NavFooter = () => {
   return (
     <div className='landing-page-container'>
-      <p>Hello <br/>I am a Fullstack Developer from Lusaka <br/>
-     that loves creating wonderful and exciting projects.</p>
+      <div>
+        <p className="first-row">Hello 👋</p>
+        <p>My name is Wilfred and I am a Fullstack Developer based in Lusaka.<br/>
+     My major focus is web development and I have an interest for DevOps.</p>
+      </div>
     </div>
   )
 }

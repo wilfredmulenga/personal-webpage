@@ -1,16 +1,26 @@
 @font-face {
-  font-family: 'impact';
-  src: local('impact'), url('./fonts/impact.ttf')
+  font-family: 'muli regular';
+  src: local('muli regular'), url('./fonts/Muli-Regular.ttf')
 }
 
 @font-face {
-  font-family: 'muli medium';
-  src: local('muli medium'), url('./fonts/Muli-Regular.ttf')
+  font-family: 'alegreya regular';
+  src: local('alegreya regular'), url('./fonts/Alegreya-Regular.ttf')
 }
 
 @font-face {
-  font-family: 'alegreya';
-  src: local('alegreya'), url('./fonts/Alegreya-Regular.ttf')
+  font-family: 'roboto regular';
+  src: local('robot regular'), url('./fonts/Roboto-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'lato regular';
+  src: local('lato regular'), url('./fonts/Lato-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'lato bold';
+  src: local('lato bold'), url('./fonts/Lato-Bold.ttf')
 }
 
 html {
@@ -31,6 +41,10 @@ body {
     &.horizontal {
       display: flex;
       width: 100%;
+      img {
+        width: 400px;
+        height: 300px;
+      }
     }
 
     &.sub-blog {
@@ -40,10 +54,12 @@ body {
 
     a {
       position: relative;
+      color: #e1341e;
+      text-decoration: none;
     }
 
     .title {
-      font-family: 'muli medium';
+      font-family: 'muli regular';
       margin: 0;
       font-size: 1.2rem;
       margin-top: 1rem;
@@ -51,10 +67,8 @@ body {
     }
 
     .description {
-      font-family: 'alegreya';
+      font-family: 'alegreya regular';
     }
-
-    .link {}
 }
 
 .text-container {
@@ -65,18 +79,18 @@ body {
 .heading {
   margin: 0;
   text-align: center;
-  margin-bottom: 4rem;
-  font-family: 'muli medium';
+  margin-bottom: 2rem;
+  font-family: 'lato regular';
   font-size: 1.5rem;
 }
 
 //App
-.app-container {}
 
 // NavFooter
 .navfooter-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #171810;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -84,12 +98,15 @@ body {
   padding-bottom: 1rem;
 
   p {
-    font-family: 'impact';
+    font-family: 'lato bold';
+    text-transform: uppercase;
+    font-size: 0.8rem;
     color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   img {
-    width: 48px;
     padding-left: 1rem;
   }
 }
@@ -98,12 +115,21 @@ body {
 .landing-page-container {
   display: flex;
   justify-content: center;
-  padding-bottom: 7.5rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   text-align: center;
   background-color: #171810;
+  margin-bottom: 4rem;
   p {
-    font-family: 'muli medium';
+    font-family: 'muli regular';
     color: #FFFFFF;
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  .first-row {
+    font-size: 2rem;
+    font-family: 'Lato bold';
   }
 }
 
@@ -124,11 +150,12 @@ body {
 .project-item-image {
   width: 300px;
   height: 200px;
+  object-fit: contain;
 }
 
 .skills-container {
   display: flex;
-  margin-bottom: 7.5rem;
+  margin-bottom: 4rem;
   background-color: #171810;
   padding-top: 5rem;
   padding-left: 5rem;
@@ -164,6 +191,7 @@ body {
         margin-bottom: 1rem;
         p {
           text-transform: uppercase;
+          font-family: 'lato bold';
         }
         .javascript {
           color: #ffca00;
@@ -191,18 +219,45 @@ body {
   }
 
   .skills-heading {
-    font-family: 'muli medium';
-    font-size: 1.5rem;
+    font-family: 'lato bold';
+    font-size: 1.8rem;
     margin: 0;
     margin-bottom: 1rem;
+  }
+
+  .skills-description {
+    font-size: 1.1rem;
+    font-family: 'muli regular';
   }
 }
 
 // Blog
 .blog-container {
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   margin-bottom: 7.5rem;
+
+  .text-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    .title {
+      font-size: 1.5rem;
+      font-family: 'roboto regular';
+      margin-bottom: 0.5rem;
+      color: #00BEC5;
+    }
+    .date {
+      font-size: 0.8rem;
+      font-style: oblique;
+      margin-top: 0;
+      margin-bottom: 1.8rem;
+    }
+    .description {
+      font-family: 'alegreya regular';
+    }
+  }
 }
 
 .sub-blog-container {

@@ -1,7 +1,7 @@
 import React from 'react'
-import githubImage from './images/github-64-FF0BAC.png'
-import envelopeImage from './images/envelope-64-FF0BAC.png'
-import twitterImage from './images/t-64-FF0BAC.png'
+import githubImage from './images/github-32-FFFFFF.png'
+import envelopeImage from './images/envelope-32-FFFFFF.png'
+import twitterImage from './images/t-32-FFFFFF.png'
 
 const NavFooter = () => {
   return (

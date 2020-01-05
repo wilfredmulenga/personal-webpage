@@ -1,14 +1,13 @@
 import React from 'react'
-import placeholder from './images/placeholder.png'
 
-const ProjectItem = ({ title, description, link }) => {
+const ProjectItem = ({ title, description, link, img }) => {
   return (
     <div className="card">
-      <img className="project-item-image" src={placeholder} alt="placeholder-image"/>
+      <img className="project-item-image" src={img} alt="project-item-image"/>
       <div className="text-container">
         <p className="title">{title}</p>
         <p className="description">{description}</p>
-        <a className="link" href={link}><p>See more</p></a>
+        <a target="_blank" rel="noopener noreferrer" className="link" href={link}><p>See more</p></a>
       </div>
     </div>
   )
