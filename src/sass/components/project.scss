@@ -1,10 +1,26 @@
-.projects-container {
-  margin-bottom: 7.5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+@import './../variables/variables.scss';
+
+@media screen and (max-width: $md) {
+  .projects-container {
+    margin-bottom: 7.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .project-item-list {
+    display: inline;
+   }
 }
 
-.project-item-list {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: $md) {
+  .projects-container {
+    margin-bottom: 7.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .project-item-list {
+    display: flex;
+    justify-content: space-between;
+  }
 }

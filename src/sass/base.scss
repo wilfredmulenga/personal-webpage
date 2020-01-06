@@ -1,3 +1,5 @@
+@import './variables/variables.scss';
+
 @font-face {
   font-family: 'muli regular';
   src: local('muli regular'), url('./../fonts/Muli-Regular.ttf')
@@ -31,7 +33,51 @@ body {
   margin: 0;
 }
 
-.card {
+@media screen and (max-width: $md) {
+  .card {
+    width: min-content;
+    border: 0.5px solid;
+    border-color: #c8c8c8;
+    border-radius: 2px;
+    box-shadow: rgba(5, 9, 15, 0.25) 0px 4px 4px 0px;
+    margin-bottom: 2rem;
+
+    &.horizontal {
+      display: flex;
+      width: 100%;
+      img {
+        width: 400px;
+        height: 300px;
+      }
+    }
+
+    &.sub-blog {
+      width: 25rem;
+      margin-top: 2rem;
+    }
+
+    a {
+      position: relative;
+      color: #e1341e;
+      text-decoration: none;
+    }
+
+    .title {
+      font-family: 'muli regular';
+      margin: 0;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-family: 'alegreya regular';
+    }
+}
+}
+
+@media screen and (min-width: $md) {
+  .card {
     width: min-content;
     border: 0.5px solid;
     border-color: #c8c8c8;
@@ -70,6 +116,9 @@ body {
       font-family: 'alegreya regular';
     }
 }
+}
+
+
 
 .text-container {
   padding-left: 0.5rem;
