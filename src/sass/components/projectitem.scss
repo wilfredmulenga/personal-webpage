@@ -1,0 +1,82 @@
+.project-item-image {
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.skills-container {
+  display: flex;
+  background-color: #171810;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 4rem;
+
+  .LHS {
+    flex: 1;
+    padding-top: 6rem;
+    p {
+      color: #FFFFFF;
+    }
+  }
+
+  .RHS {
+    flex: 1;
+
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+      object-fit: contain;
+    }
+    .row {
+      display: flex;
+    }
+
+      .column {
+        display: flex;
+        align-items: center;
+        width: 13rem;
+        margin-bottom: 1rem;
+        p {
+          text-transform: uppercase;
+          font-family: 'lato bold';
+        }
+        .javascript {
+          color: #ffca00;
+        }
+        .redux {
+          color: #764abc;
+        }
+        .docker {
+          color: #009ddc;
+        }
+        .react {
+          color: #009ddc;
+        }
+        .node {
+          color: #679f5c;
+        }
+        .firebase {
+          color: #009ddc
+        }
+      }
+      .second {
+        margin-left: 5rem;
+      }
+
+  }
+
+  .skills-heading {
+    font-family: 'lato bold';
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .skills-description {
+    font-size: 1.1rem;
+    font-family: 'muli regular';
+  }
+}

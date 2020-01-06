@@ -6,7 +6,7 @@ import Skills from './Skills'
 import Blog from './Blog'
 import Icons8Tribute from './Icons8Tribute'
 import Underline from './Underline'
-import './App.scss'
+import './sass/App.scss'
 
 function App () {
   return (
