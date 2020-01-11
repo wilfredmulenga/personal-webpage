@@ -35,7 +35,6 @@ body {
 
 @media screen and (max-width: $md) {
   .card {
-    width: min-content;
     border: 0.5px solid;
     border-color: #c8c8c8;
     border-radius: 2px;
@@ -43,16 +42,15 @@ body {
     margin-bottom: 2rem;
 
     &.horizontal {
-      display: flex;
+      display: block;
       width: 100%;
       img {
-        width: 400px;
-        height: 300px;
+        width: 100%;
       }
     }
 
     &.sub-blog {
-      width: 25rem;
+      width: 100%;
       margin-top: 2rem;
     }
 
@@ -74,6 +72,25 @@ body {
       font-family: 'alegreya regular';
     }
 }
+
+  .underline {
+    height: 0.3rem;
+    background-color: #00BEC5;
+    margin-bottom: 2rem;
+  }
+
+  .text-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .heading {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'lato regular';
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: $md) {
@@ -115,20 +132,27 @@ body {
     .description {
       font-family: 'alegreya regular';
     }
-}
+  }
+
+  .underline {
+    height: 0.3rem;
+    background-color: #00BEC5;
+    margin-bottom: 4rem;
+  }
+
+  .text-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .heading {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'lato regular';
+    font-size: 1.5rem;
+  }
 }
 
 
 
-.text-container {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.heading {
-  margin: 0;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-family: 'lato regular';
-  font-size: 1.5rem;
-}
