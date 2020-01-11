@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import facebookBlog from './images/f-blog.jpeg'
 
 const MainBlog = () => {
@@ -26,7 +27,7 @@ const SubBlog = ({ title, description, date, readMore }) => {
           <p className="title">{title}</p>
           <p className="date">{date}</p>
           <p className="description">{description}</p>
-          { readMore ? <a href={readMore}><p className="read-more">Read More &gt;</p></a> : null }
+          { readMore ? <a target="_blank" rel="noopener noreferrer" href={readMore}><p className="read-more">Read More &gt;</p></a> : null }
         </div>
       </div>
     </div>
@@ -53,6 +54,13 @@ const Blog = () => {
       </div>
     </div>
   )
+}
+
+SubBlog.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  readMore: PropTypes.string.isRequired
 }
 
 export default Blog

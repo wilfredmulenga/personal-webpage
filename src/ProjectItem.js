@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const ProjectItem = ({ title, description, link, img }) => {
   return (
@@ -11,6 +12,13 @@ const ProjectItem = ({ title, description, link, img }) => {
       </div>
     </div>
   )
+}
+
+ProjectItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired
 }
 
 export default ProjectItem
