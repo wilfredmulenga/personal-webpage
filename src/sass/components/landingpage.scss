@@ -1,0 +1,48 @@
+@import './../variables/variables.scss';
+
+
+@media screen and (max-width: $md) {
+  .landing-page-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    background-color:#222831;
+    p {
+      font-family: 'muli regular';
+      color: #FFFFFF;
+      font-size: 1.2rem;
+      margin-top: 0;
+    }
+
+    .first-row {
+      font-size: 2rem;
+      font-family: 'Lato bold';
+    }
+  }
+}
+
+@media screen and (min-width: $md) {
+  .landing-page-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    background-color: #222831;
+    p {
+      font-family: 'muli regular';
+      color: #FFFFFF;
+      font-size: 1.2rem;
+      margin-top: 0;
+    }
+
+    .first-row {
+      font-size: 2rem;
+      font-family: 'Lato bold';
+    }
+  }
+}

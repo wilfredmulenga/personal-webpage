@@ -1,0 +1,21 @@
+@import './../variables/variables.scss';
+
+@media screen and (max-width: $md) {
+
+  .project-item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+}
+
+@media screen and (min-width: $md) {
+
+  .project-item-image {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+  }
+
+}

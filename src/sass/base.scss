@@ -1,0 +1,158 @@
+@import './variables/variables.scss';
+
+@font-face {
+  font-family: 'muli regular';
+  src: local('muli regular'), url('./../fonts/Muli-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'alegreya regular';
+  src: local('alegreya regular'), url('./../fonts/Alegreya-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'roboto regular';
+  src: local('robot regular'), url('./../fonts/Roboto-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'lato regular';
+  src: local('lato regular'), url('./../fonts/Lato-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'lato bold';
+  src: local('lato bold'), url('./../fonts/Lato-Bold.ttf')
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+@media screen and (max-width: $md) {
+  .card {
+    border: 0.5px solid;
+    border-color: #c8c8c8;
+    border-radius: 2px;
+    box-shadow: rgba(5, 9, 15, 0.25) 0px 4px 4px 0px;
+    margin-bottom: 2rem;
+
+    &.horizontal {
+      display: block;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    &.sub-blog {
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    a {
+      position: relative;
+      color: #e1341e;
+      text-decoration: none;
+    }
+
+    .title {
+      font-family: 'muli regular';
+      margin: 0;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-family: 'alegreya regular';
+    }
+}
+
+  .underline {
+    height: 0.3rem;
+    background-color: #00BEC5;
+    margin-bottom: 2rem;
+  }
+
+  .text-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .heading {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'lato regular';
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .card {
+    width: min-content;
+    border: 0.5px solid;
+    border-color: #c8c8c8;
+    border-radius: 2px;
+    box-shadow: rgba(5, 9, 15, 0.25) 0px 4px 4px 0px;
+
+    &.horizontal {
+      display: flex;
+      width: 100%;
+      img {
+        width: 400px;
+        height: 300px;
+      }
+    }
+
+    &.sub-blog {
+      width: 25rem;
+      margin-top: 2rem;
+    }
+
+    a {
+      position: relative;
+      color: #e1341e;
+      text-decoration: none;
+    }
+
+    .title {
+      font-family: 'muli regular';
+      margin: 0;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-family: 'alegreya regular';
+    }
+  }
+
+  .underline {
+    height: 0.3rem;
+    background-color: #00BEC5;
+    margin-bottom: 4rem;
+  }
+
+  .text-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .heading {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'lato regular';
+    font-size: 1.5rem;
+  }
+}
+
+
+
