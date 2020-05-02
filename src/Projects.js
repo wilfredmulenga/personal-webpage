@@ -15,7 +15,7 @@ const Projects = () => {
           title="Project Zed"
           description="Platform to showcase projects built by developers from Zambia, both open and closed
           source. Once users log in, they can submit new projects as well as like other projects."
-          link="https://project-zed-be264.firebaseapp.com/"
+          link="https://project-zed-3d057.web.app/"
         />
         <ProjectItem
           img={coachSamImage}
